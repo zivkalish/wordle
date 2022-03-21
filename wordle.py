@@ -61,8 +61,8 @@ def find_worst_evaluation_number(eval2words):
         # initiat the worst solution
         if not worst_evaluation_number:
             worst_evaluation_number = len(remaining_solution)
-        worst_evaluation = max(worst_evaluation_number, len(remaining_solution))
-    return worst_evaluation
+        worst_evaluation_number = max(worst_evaluation_number, len(remaining_solution))
+    return worst_evaluation_number
 
 
 def sort_possible_solutions(possible_solutions, word_list, n=10):
